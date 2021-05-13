@@ -1,0 +1,163 @@
+ # Plugin license configuration.
+securityConfiguration:
+  licenseKey: 'KEY'
+ # MySQL database configuration.
+databaseConfiguration:
+  hostname: 'localhost'
+  port: 3306
+  username: 'mineLogin'
+  password: 'passowrd'
+  base: 'mineLogin'
+  useSSL: false
+  maxLifeTime: 1800000
+  maxPoolSize: 20
+  showErrors: false
+  connectionTimeout: 3000
+ # It's a motd server manager.
+ # We recommend to use it instead of other motd plugins.
+serverPingConfiguration:
+   # Should server ping manager be enabled?
+  enable: true
+  messageOfTheDayConfiguration:
+    enable: true
+     # Configure message of the day of the server.
+     # Use "%new%" to add a new line.
+    messages:
+      -  '                        &6&lmine&e&lLogin %new% &8>> &7Message of the day!!'
+  playersInfoConfiguration:
+     # Should players info be enabled?
+    enable: true
+     # Message displayed when hovering over online players count.
+    messages:
+      -  ''
+      -  '&eJuż niedługo więcej informacji!'
+      -  ''
+  versionProtocolConfiguration:
+     # Should version protocol be enabled?
+    enable: true
+     # Message displayed instead of protocol version (where normally server version is displayed).
+    message: 'Prace nad siecią! &7%online%/%slots%'
+     # Protocols list: https://wiki.vg/Protocol_version_numbers, if you want custom message on this line use -1 protocol.
+    protocol: -1
+ # Mailing server configuration.
+ # We recommend to use sendgrid.com.
+mailingConfiguration:
+  active: false
+  serverName: 'YourAddress.com'
+  server: 'smtp.sendgrid.net'
+  port: 587
+  fromEmail: 'info@minecodes.pl'
+  username: 'apikey'
+  password: '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'
+  emailTitle: 'Password recovery (YourAddress.com) '
+ # Name of login server (e.g hub)
+loginServers:
+   # Name of the server that the players will be send to after successful login.
+   # Premium players will be send to that server automatically
+  servers:
+    -  'lobby'
+ # Fallback server configuration.
+fallbackServer:
+   # Should fallback server be enabled?
+  enable: true
+   # Name of the fallback server.
+  server: 'lobby'
+ # Configuration of after-login server.
+afterLoginServers:
+   # Should after-login server be enabled?
+  enable: false
+   # Name of the server that the players will be send to after successful login.
+   # Premium players will be send to that server automatically
+  servers:
+    -  'g'
+ # Your Hashing algorithm.
+ # You can use: BCRYPT, SHA512, SHA256 and MD5
+hashType: 'SHA512'
+ # Limit of accounts per player.
+maximumPlayerAccounts: 2
+ # Limit of login attempts.
+maximumPlayerLoginAttempts: 3
+ # Maximum proxy slots displayed in server menu.
+proxySlots: 200
+ # Configure how current slots (players playing) should be displayed.
+ # STATIC - static integer
+ # DYNAMIC - current amount of players on the proxy (recommended)
+proxySlotsType: 'STATIC'
+ # Minimum time between connections.
+ # This value should be low, setting it too high will result in players unable to join.
+timeBetweenConnections: '1s'
+ # Debug information about premium login.
+ # You shouldn't need this unless you are submitting a bug report or encountering problem with premium login.
+paidCheckDebug: true
+ # Should cracked player be able to claim premium player's nick?
+ # Only applies to nickname's first connection.
+crackedOnPaidNickname: false
+ # Configure title login message.
+joinTitle:
+   # Should join title be displayed?
+  enable: true
+   # Time in ticks for fadeIn state.
+  fadeIn: 20
+   # Time in ticks for fadeOut state.
+  fadeOut: 20
+   # Time in ticks for how long the title should be displayed.
+  stay: 30
+ # Configure login timeout.
+ # After reaching timeout without logging in, the player will be kicked.
+loginTimeout: '30s'
+ # Warning displayed when no email address has been assigned to the account.
+emailWarning: true
+ # Debug information about updated users.
+ # Useful when you migrate from other plugin.
+usersUpdateDebug: false
+ # Should Salt be used for additional protection of user data?
+useSaltForPasswords: false
+ # Illegal passwords list.
+ # This passwords will not be allowed to use.
+illegalPasswords:
+  -  'password'
+  -  'p@ssw0rd'
+  -  'password123'
+  -  'dick123'
+  -  'dick'
+  -  'pussy123'
+  -  'pussy'
+  -  '1234567'
+  -  'haslo'
+  -  'haslo123'
+  -  'dupa123'
+  -  'dupa'
+  -  'legia'
+ # Minimum password length.
+minimumPasswordLength: 5
+ # Duration of the login session (non-premium).
+ # In this time, unless player's IP will change, the player will be logged automatically
+sessionActiveTime: '1d'
+ # Enable spigot bridge (you have to install mineLoginBridge addon on Spigot server)
+enableSpigotBridge: true
+ # Should debug be enabled?
+ # You shouldn't need this unless you are submitting a bug report or encountering problem with the plugin.
+debug: false
+ # Changes player's unique ID.
+ # If a non-premium player switches his account to premium, the items will be saved (Flamecord only).
+changeUniqueIDForPaidPlayers: false
+ # BossBar configuration.
+commandsOnBossBar:
+   # Color of BossBar.
+   # You can use: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
+  barColor: 'GREEN'
+   # Style of BossBar.
+   # You can use: SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20
+  barStyle: 'SOLID'
+   # Should login commands on BossBar be enabled?
+   # Note: BossBar will be displayed only for 1.9+ clients.
+  enable: true
+ # Admins needed logged normal and by secure code.
+enableAdminsSecurity: false
+ # Configure GeoIP function.
+geoIpConfiguration:
+   # Country iso codes.
+   # List: https://en.wikipedia.org/wiki/ISO_3166-1
+  availableCountries:
+    -  'PL'
+  enable: true
