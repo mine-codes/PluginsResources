@@ -139,7 +139,7 @@ enableSpigotBridge: true
  # You shouldn't need this unless you are submitting a bug report or encountering problem with the plugin.
 debug: false
  # Changes player's unique ID.
- # If a non-premium player switches his account to premium, the items will be saved (Flamecord only).
+ # If a non-premium player switches his account to premium, the items will be saved.
 changeUniqueIDForPaidPlayers: false
  # BossBar configuration.
 commandsOnBossBar:
