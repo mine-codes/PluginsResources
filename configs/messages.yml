@@ -1,118 +1,247 @@
-accountTypeChangeTimeout: ' &8>> &cRequest timed out!'
-addNewEmailAddressCommand: ' &8>>Add your email adress! &cUse &e/email <email-address>!'
-addressAlreadyWhitelisted: '&cThis address is already whitelisted.'
-addressInNotWhitelisted: '&cThis address is not whitelisted.'
-addressIsNotValid: '&cThis address is not valid.'
-adminCommand:
-  -  ' &8>> &c/minelogin version - &ePlugin version information.'
-  -  ' &8>> &c/minelogin reload - &eReload plugin configs.'
-  -  ' &8>> &c/minelogin userinfo <username> - &eReturn information about user.'
-  -  ' &8>> &c/minelogin register <username> <password> - &eRegister user.'
-  -  ' &8>> &c/minelogin unregister <username> - &eUnregister user (Delete from database).'
-  -  ' &8>> &c/minelogin lastattempt <username> - &eInformation about last login attempt.'
-  -  ' &8>> &c/minelogin forcelogin <username> - &eForce user login.'
-  -  ' &8>> &c/minelogin changetype <username> <true/false> - &eChange user login type (true = for paid accounts, false = for cracked players)'
-  -  ' &8>> &c/minelogin changepassword <username> <password> - &eChange user password.'
-  -  ' &8>> &c/minelogin migration <stop/MINELOGIN/AUTHME/FASTLOGIN/DYNAMICBUNGEEAUTH> - &eMigration users from other plugins.'
-  -  ' &8>> &c/minelogin geoip <check/add/remove> <address (IPv4)> - &eManage GeoIP whitelist.'
-afterLoginServerNoResponding: ' &cAfter login server is no responding.'
-alreadyLogin: ' &8>> &cYou are already logged in!'
-alreadyRegistered: ' &8>> &cYou are already registered!'
-apisAreNotResponding: '&cAPIs are not responding!'
-argumentIsNotBoolean: ' &8>> &cArgument is not boolean!'
-badNickLength: '&cIncorrect nick length.'
-badUniqueIDFormat: ' &8>> &cUUID format is: &exxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
-changeEmailAddressCommand: ' &8>> &cUse &e/email <old-email-address> <new-email-address> &cto change him!'
-changePasswordCommand: ' &8>> &7Change your password: &e/changepass <old-password> <new-password>'
-commandConfirm: ' &8>> &cPlease run this command again to confirm!'
-commandsOnBossBar:
-  loginCommand: '&7Login with &e/login <password>'
-  registerCommand: '&7Set your password: &e/register <password> <password> %captcha%'
-countryIsBlocked: '&cYour country is blocked!'
-crackedAccountDetected: ' &8>> &cCracked account detected!'
-crackedCommand: ' &8>> &7Change account type to cracked: &e/cracked <password> <repeat-password>'
-doNotHavePermission: ' &8>> &cYou are not permitted to perform this command! &8(&e%permission%&8)'
-errorChangeYourAccountType: ' &8>> &cAn error occured while changing account type to paid!'
-incorrectCaptcha: ' &8>> &cThe code you entered is incorrect!'
-incorrectEmailValidation: ' &8>> &cIncorrect email!'
-incorrectOldPassword: ' &8>> &cIncorrect old password!'
-incorrectPassword: ' &8>> &cIncorrect password! %use%/%max% attempts left.'
-incorrectPasswordKick: ' &f&lmineLogin %new% &cToo many failed attempts! Use &e/recovery. &cNOTE: Make sure you have an email adress assigned to your account.'
-incorrectPasswordRestoreInfo: ' &8>> &cLast attempt! If you forgot your password, use &e/recovery. &cNOTE: Make sure you have an email adress assigned to your account.'
-invalidRecoveryCode: ' &8>> &cInvalid security code. Check your email!'
-isIllegalPassword: ' &8>> &cThis password is illegal, please change.'
-joinTitle:
-  needLogged: '&eNeed login!'
-  needRegister: '&eSet your password!'
-  successLoginBySession: '&aSuccessfully logged in by session!'
-  successLoginPaidAccount: '&aSuccessfully logged in! (premium account)'
-  title: '&6&lmineLogin'
-loginCommand: ' &8>> &7Login with &e/login <password>'
-loginServerNull: '&cPlease check login server configuration.'
-loginTimeout: '&cTime for logging in has expired!'
-mailingIsDisabled: ' &8>> &cThis server has disabled mailing system.'
-maximumPlayerAccounts: ' &8>> &cYou have reached the maximum number of accounts!'
-migrationCommand:
-  -  ''
-  -  ' &8>> &aAvailable plugins for migration:'
-  -  ' - AUTHME'
-  -  ' - FASTLOGIN + AUTHME'
-  -  ' - OLD MINELOGIN'
-  -  ' - DYNAMICBUNGEEAUTH'
-  -  ' '
-  -  ' &8>> &cType your plugin and use &e/minelogin migration <AUTHME/FASTLOGIN/MINELOGIN/DYNAMICBUNGEEAUTH>'
-  -  ' &8>> &cUse &e/minelogin micration stop &cto stopping migration process.'
-  -  ' '
-migrationPluginNull: ' &8>> &cMigration plugin is null. Use MINELOGIN, AUTHME, FASTLOGIN, DYNAMICBUNGEEAUTH'
- # Placeholders: %minimum%
-minimumPasswordLength: ' &8>> &8Your password must contain more than %minimum% characters!'
-needReconnectToConfirmChanged: '&aPlease reconnect to server for confirm.%new%&6&lWARNING! &cYour UUID will change!'
-nickIsAlreadyOnline: '&cThis nick is already online!'
-nicknameIsNotPaidAccount: ' &8>> &cYour nickname does not belong to paid account.'
-noEmailConnected: ' &8>> &cThere is no e-mail address connected to this account.'
-notAllowedChars: '&cYour nick contains not allowed chars!'
-notLogged: ' &8>> &cYou are not logged in!'
-notMatchEmails: ' &8>> &cEmails do not match, try again.'
-notMatchPasswords: ' &8>> &cPasswords do not match, try again.'
-paidAccountDetected: ' &8>> &cPremium account detected!'
-playerIsOffline: ' &8>> &cPlayer is currently offline!'
-recoveryAccountCommand: ' &8>> &cUse &e/restore <code> <new-password> <new-password>'
-recoveryAccountEmailSend: ' &8>> &aAccount recovery email has been sent! Delivery process may take up to 8 minutes.'
-recoveryAccountSuccess: ' &8>> &aYour account has been successfully recovered!'
-registerCommand: ' &8>> &7Set your password: &e/register <password> <password> %captcha%'
-repeatMigrationCommand: '&cPlease repeat migration command again.'
-serverIsFull: '&cServer is full, try again later.'
-successAddAddressToWhitelist: '&aSuccess add address to GeoIP whitelist.'
-successChangeConnectedEmailAddress: ' &8>> &aSuccessfully changed your email address!'
-successChangePassword: ' &8>> &aYour password has been changed successfully!'
-successChangePasswordByAdmin: ' &8>> &a%username%''s password has been succesfully changed!'
-successChangeUniqueIDByAdmin: ' &8>> &aSuccessfully change &e%username% &aunique id.'
-successChangeUserType: ' &8>> &aSuccessfully changed user''s account type!'
- # Use "%type%" for account type
-successChangeYourAccountType: ' &8>> &aSuccess changed account type! (paid)'
-successConnectedEmailAddress: ' &8>> &aSuccess connected your email address to account!'
-successDisableLoginSession: ' &8>> &aSuccessfully disabled login session!'
-successEnableLoginSession: ' &8>> &aLogin session successfully enabled for %time% or until the ip address is changed.'
-successForceLogin: ' &8>> &aForced login- %username%'
-successLoginBySession: ' &8>> &aSuccessfully logged in by session!'
-successLoginNonPremiumAccount: ' &8>> &aSuccessfully logged in! (non-premium account)'
-successLoginPaidAccount: ' &8>> &aSuccessfully logged in! (premium account)'
-successRegister: ' &8>> &aYou have been successfully registered!'
-successRegisterByAdmin: ' &8>> &aSuccessfully registered user!'
-successRemoveAddressFromWhitelist: '&aSuccess remove address from GeoIP whitelist.'
-successStoppedMigration: ' &8>> &cSuccess stopped migration!'
-successUnregister: '&aSuccessfully unregistered!'
-successUnregisterByAdmin: ' &8>> &aSuccessfully unregistered %username%!'
-tooManyConnections: '&cToo many connections! Please try again in &e%time%'
-typeVariableCracked: 'Cracked'
-typeVariablePaid: 'Paid'
-unregisterCommand: ' &8>> &7Unregister your account &e/unregister <password> %captcha%'
-useCorrectUsername: '&cUse your correct username: &e%username%'
-userAlreadyHaveThisType: ' &8>> &cThis account already has this type.'
-userAlreadyLogin: ' &8>> &cUser is already logged!'
-userIsNotRegistered: ' &8>> &cThis user is not registered!'
-userIsNull: ' &8>> &cUser is null!'
-userIsRegistered: ' &8>> &cThis user is already registered!'
-userLastAttempt: ' &8>> &cLast attempt this user is: &e%lastAttempt%'
-userNeverJoined: ' &8>> &cUser has never joined to server.'
-warningAddEmail: '&4&lIMPORTANT! &cAdd an email address to your account &e/email <email>'
+#################################################
+#                    mineLogin                  #
+#  The best plugin for players authentication!  #
+#                                               #
+#           Messages configuration file         #
+#                                               #
+#          All English translations are         #
+#            may not be 100% correct.           #
+#                                               #
+#             Config version: 1.0.0             #
+#################################################
+#Issue: Comments not available for all options. (Configs library bug)
+
+#PL: Lista komend administratora.
+#EN: 
+administrator-commands-list:
+- ''
+- '                  &#ff392bAdministrator commands'
+- ''
+- ' &8[&6#&8] &7/minelogin changepassword <nickname> <new-password> - &eChange user
+  password.'
+- ' &8[&6#&8] &7/minelogin changetype <nickname> <CRACKED/PAID> - &eChange user login
+  type.'
+- ' &8[&6#&8] &7/minelogin changeuniqueid <nickname> <new-uniqueid> - &eChange user
+  unique id.'
+- ' &8[&6#&8] &7/minelogin forcelogin <nickname> - &eForce user login.'
+- ' &8[&6#&8] &7/minelogin geolocation <add/remove/check> <IPv4> - &eManage geolocation
+  whitelist.'
+- ' &8[&6#&8] &7/minelogin register <nickname> <password> - &eRegister user.'
+- ' &8[&6#&8] &7/minelogin reload - &eReload plugin configs.'
+- ' &8[&6#&8] &7/minelogin unregister <nickname> - &eUnregister user (Delete from
+  database).'
+- ' &8[&6#&8] &7/minelogin userinfo <nickname> - &ereturn MessagesService.parse(information
+  about user.'
+- ' &8[&6#&8] &7/minelogin version - &ePlugin version information.'
+- ''
+#PL: Gdy użytkownik nie posiada uprawnień do komendy.
+#EN: 
+dont-have-permission: ' &8[&6#&8] &cYou are not permitted to perform this command!
+  &8(&e{permission}&8)'
+#PL: Gdy użytkownik nie istnieje w bazie danych.
+#EN: 
+user-does-not-exist: ' &8[&6#&8] &cUser does not exist in the database.'
+#PL: Gdy plugin wykryje konto premium w niedozwolonej akcji dla tego typu konta.
+#EN: 
+premium-account-detected: ' &8[&6#&8] &cPremium account detected!'
+#PL: Gdy plugin wykryje konto cracked w niedozwolonej akcji dla tego typu konta.
+#EN: 
+cracked-account-detected: ' &8[&6#&8] &cCracked account detected!'
+#PL: Gdy użytkownik jest już zarejestrowany.
+#EN: 
+user-is-registered: ' &8[&6#&8] &cThis user is already registered!'
+#PL: Gdy użytkownik nie jest zarejstrowany.
+#EN: 
+user-is-not-registered: ' &8[&6#&8] &cThis user is not registered!'
+#PL: Gdy użytkownik poda zbyt krótkie hasło.
+#EN: 
+minimum-password-length: ' &8[&6#&8] &cYour password must contain more than &e{minimum}
+  &ccharacters!'
+#PL: Gdy administartor zmieni hasło użytkownika.
+#EN: 
+successfully-change-password-by-admin: ' &8[&6#&8] &a{username}''''s password has
+  been succesfully changed!'
+#PL: Gdy podany typ konta jest niepoprawny.
+#EN: 
+incurred-account-type: ' &8[&6#&8] &cIncurred account type!'
+#PL: Gdy podany użytkownik posida typ konta na który chce się mu zmienić.
+#EN: 
+user-already-has-this-account-type: ' &8[&6#&8] &cThis account already has this type.'
+#PL: Gdy administartor zmieni typ konta użytkownika.
+#EN: 
+successfully-change-account-type-by-admin: ' &8[&6#&8] &aSuccessfully changed {username}''''s
+  account type!'
+#PL: Gdy użytkownik zmieni typ konta.
+#EN: 
+successfully-change-account-type: ' &8[&6#&8] &aSuccess changed account type! ({type})'
+#PL: Gdy zmiana typu konta na premium nie przebiegła poprawnie.
+#EN: 
+error-change-your-account-type: ' &8[&6#&8] &cAn error occured while changing account
+  type to paid!'
+#PL: Gdy podany format uuid jest nie poprawny.
+#EN: 
+incurred-unique-id-format: ' &8[&6#&8] &cUUID format is: &exxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
+#PL: Gdy adminstator zmieni uuid użytkownika.
+#EN: 
+successfully-changed-unique-id: ' &8[&6#&8] &aSuccessfully change {username}''''s
+  &aUnique Id.'
+#PL: Gdy użytkownik jest juz zalogowany.
+#EN: 
+user-is-already-logged: ' &8[&6#&8] &cUser is already logged!'
+#PL: Gdy użytkownik jest offline.
+#EN: 
+user-is-offline: ' &8[&6#&8] &cUser is already offline!'
+#PL: Gdy użytkownik pomyślnie zaloguje się z typku konta cracked.
+#EN: 
+successfully-login-by-non-premium: ' &8[&6#&8] &aSuccessfully logged in! (non-premium
+  account)'
+#PL: Gdy logowanie użytkownika zostanie wymuszone.
+#EN: 
+successfully-force-login: ' &8[&6#&8] &aForced login - {username}'
+#PL: Gdy serwer na który chce przejść użytkownik podczas logowanie jest nie dostępny.
+#EN: 
+server-not-response: ' &8[&6#&8] &cServers {server} is not responding!'
+server-lost-connection: ' &8[&6#&8] &cServer &e{server} lost connection by: &6{reason}&8'
+#PL: Gdy format adresu IPv4 jest nie poprawny.
+#EN: 
+address-is-not-valid: ' &8[&6#&8] &cThis address is not valid'
+#PL: Gdy adres jest już na białej liście geolokalizacji.
+#EN: 
+address-already-whitelisted: ' &8[&6#&8] &cThis address is already whitelisted.'
+#PL: Gdy adres nie jest na białej liście geolokalizacji.
+#EN: 
+address-is-not-whitelisted: ' &8[&6#&8] &cThis address is not whitelisted.'
+#PL: Gdy adres zostanie dodany do białej listy geolokalizacji.
+#EN: 
+successfully-added-address-to-whitelist: ' &8[&6#&8] &aSuccess add {address} to Geolocation
+  whitelist.'
+#PL: Gdy adres zostanie usunięty z białej listy geolokalizacji.
+#EN: 
+successfully-removed-address-from-whitelist: ' &8[&6#&8] &aSuccess remove {address}
+  from Geolocation whitelist.'
+#PL: Gdy administrator zarejestruje użytkownika.
+#EN: 
+successfully-registered-by-admin: ' &8[&6#&8] &aSuccessfully registered user!'
+#PL: Gdy administartor odrejestruje użytkownika.
+#EN: 
+successfully-unregister-by-admin: ' &8[&6#&8] &aSuccessfully unregistered {username}!'
+#PL: Gdy użytkownik odrejestruje swoje konto.
+#EN: 
+successfully-unregister: ' &8[&6#&8] &aSuccessfully unregistered!'
+#PL: Komenda Gdy użytkownik musi się zarejestrować.
+#EN: 
+register-command: ' &8[&6#&8] &7Set your password: &e/register <password> <password>
+  {captcha}'
+unregister-command: ' &8[&6#&8] &7Unregister your account &e/unregister <password>'
+login-command: ' &8[&6#&8] &7Login with &e/login <password> {2fa}'
+add-email-command: ' &8[&6#&8] &7Add your email adress. &cUse &e/email <email-address>!'
+change-email-command: ' &8[&6#&8] &cUse &e/email <old-email-address> <new-email-address>
+  &cto change him!'
+cracked-command: ' &8[&6#&8] &7Change account type to cracked: &e/cracked <password>
+  <repeat-password>'
+recovery-command: ' &8[&6#&8] &cUse &e/recovery <code> <new-password> <new-password>'
+change-password-command: ' &8[&6#&8] &7Change your password: &e/changepass <old-password>
+  <new-password>'
+not-logged: ' &8[&6#&8] &cYou are not logged in!'
+already-logged: ' &8[&6#&8] &cYou are already logged in!'
+already-registered: ' &8[&6#&8] &cYou are already registered!'
+disallowed-password: ' &8[&6#&8] &cThis password is disallowed!'
+incurred-old-password: ' &8[&6#&8] &cIncorrect old password!'
+not-match-passwords: ' &8[&6#&8] &cPasswords do not match, try again.'
+successfully-change-password: ' &8[&6#&8] &aYour password has been changed successfully!'
+command-confirm: ' &8[&6#&8] &cPlease run this command again to confirm!'
+type-variable-cracked: Cracked
+type-variable-premium: Paid
+incorrect-email-validation: ' &8[&6#&8] &cIncorrect email!'
+successfully-add-email: ' &8[&6#&8] &aSuccess connected your email address to account!'
+not-match-emails: ' &8[&6#&8] &cEmails do not match, try again.'
+successfully-change-email: ' &8[&6#&8] &aSuccessfully changed your email address!'
+successfully-back-to-lobby: ' &8[&6#&8] &aSuccessfully back to lobby.'
+nickname-is-not-premium: ' &8[&6#&8] &cYour nickname does not belong to premium account'
+need-reconnect-to-confirm-changes: ' &ePlease reconnect to server for confirm change
+  account type. {new} &4&lWARNING! {new} &cIf the server administrator has not enabled
+  the option to {new} &csave items after changing the account type, do not reconnect
+  for 1 min.'
+mailing-is-disabled: ' &8[&6#&8] &cThis server has disabled mailing system.'
+no-email-connected: ' &8[&6#&8] &cThere is no e-mail address connected to this account.'
+recovery-account-email-send: ' &8[&6#&8] &aAccount recovery email has been sent! Delivery
+  process may take up to 8 minutes.'
+invalid-recovery-code: ' &8[&6#&8] &cInvalid security code. Check your email!'
+recovery-account-success: ' &8[&6#&8] &aYour account has been successfully recovered!'
+incorrect-password: ' &8[&6#&8] &cIncorrect password! {use}/{max} attempts left'
+incorrect-old-password: ' &8[&6#&8] &cIncorrect old password!'
+incorrect-password-recovery-info: ' &8[&6#&8] &cLast attempt! If you forgot your password,
+  use &e/recovery. &cNOTE: Make sure you have an email adress assigned to your account.'
+incorrect-password-kick: ' &f&lmineLogin {new} &cToo many failed attempts! Use &e/recovery.
+  {new} &cNOTE: Make sure you have an email adress assigned to your account'
+email-warning: ' &8[&6#&8] &4&lIMPORTANT! &cAdd an email address to your account &e/email
+  <email>'
+incorrect-captcha: ' &8[&6#&8] &cThe code you entered is incorrect!'
+maximum-player-accounts: ' &8[&6#&8] &cYou have reached the maximum number of accounts!'
+successfully-register: ' &8[&6#&8] &aYou have been successfully registered!'
+successfully-disable-login-session: ' &8[&6#&8] &aSuccessfully disabled login session!'
+successfully-enable-login-session: ' &8[&6#&8] &aLogin session successfully enabled
+  for {time} or until the ip address is changed.'
+country-is-blocked: ' &8[&6#&8] &cYour country is blocked!'
+too-many-connections: ' &8[&6#&8] &cToo many connections! Please try again in &e{time}'
+server-is-full: ' &8[&6#&8] &cServer is full, try again later.'
+nickname-is-already-online: ' &8[&6#&8] &cThis nick is already online!'
+bad-nickname-length: ' &8[&6#&8] &cIncorrect nick length.'
+not-allowed-chars: ' &8[&6#&8] &cYour nick contains not allowed chars!'
+apis-are-not-responding: ' &8[&6#&8] &cAPIs are not responding!'
+use-correct-username: ' &8[&6#&8] &cUse your correct username: &e{username}'
+successfully-login-paid-account: ' &8[&6#&8] &aSuccessfully logged in! (premium account)'
+successfully-login-by-session: ' &8[&6#&8] &aSuccessfully logged in by session!'
+login-timeout: ' &8[&6#&8] &cTime for logging in has expired!'
+account-type-change-timeout: ' &8[&6#&8] &cRequest timed out!'
+successfully-reloaded: ' &8[&6#&8] &aSuccessfully reloaded plugin configs.'
+command-usage: ' &8[&6#&8] &cCurrently command usage: &e{usage}'
+action-canceled-by-api: ' &8[&6#&8] &cThis action is cancelled by plugin API.'
+user-information:
+- ' '
+- '                  #02eacf User information'
+- ' '
+- ' &8[&6#&8] &7Nickname: &e{nickname}'
+- ' &8[&6#&8] &7UniqueId: &e{uniqueId}'
+- ' &8[&6#&8] &7Email: &e{email}'
+- ' &8[&6#&8] &7Type: &e{type}'
+- ' &8[&6#&8] &7Session: &e{session}'
+- ' &8[&6#&8] &7Last attempt: &e{lastAttempt}'
+- ' &8[&6#&8] &7Register address: &e{registerAddress}'
+- ' &8[&6#&8] &7Last address: &e{lastAddress}'
+- ' &8[&6#&8] &7Register time: &e{registerTime}'
+- ' &8[&6#&8] &7Last join time: &e{lastJoinTime}'
+- ' &8[&6#&8] &7Last database update: &e{lastDatabaseUpdate}'
+- ' &8[&6#&8] &7Multi accounts: &e{multiAccount}'
+- ''
+verification-enable-success-message: ' &8[&6#&8] &aTwo-step verification has been
+  enabled on your account.'
+verification-is-already-enabled: ' &8[&6#&8] &cYou already have enabled two-step verification.'
+verification-is-not-supported: ' &8[&6#&8] &cThis server isn''t supporting two-step
+  verification.'
+verification-code-is-not-valid: ' &8[&6#&8] &cThis code isn''t valid, try again.'
+verification-failure-code-arguments: ' &8[&6#&8] &cYou need to provide generated code
+  like this: /verification 123456'
+verification-successfully-disable: ' &8[&6#&8] &aYour two-step verification has been
+  disabled.'
+verification-is-not-enable: ' &8[&6#&8] &cYou don''t have enabled two-step verification.'
+verification-panding-command: ' &8[&6#&8] &cType &e/verification <2fa-code> to confirm
+  enable 2fa verification.'
+verification-disable-information: ' &8[&6#&8] &cYou can disable 2FA by type &e/verification
+  disable <2fa-code> command'
+verification-confirm-information:
+- ''
+- '                  &c2FA Verification'
+- ''
+- ' &8[&6#&8] &7You need install &f&lGoogle Authenticator &7app on your phone.'
+- ' &8[&6#&8] &7Scan QR code from map on application or rewrite the code.'
+- ' &8[&6#&8] &e{secret}'
+- ' &8[&6#&8] &7Next step is use &e/verification <2fa-code> command.'
+- ''
+already-connected-to-this-server: '&cYou already connected to this server.'
+verification-is-disabled-for-paid-accounts: '&c2Fa verification is disabled for paid
+  users.'
+user-verification-is-not-enable: ' &8[&6#&8] &cUser don''t have enabled two-step verification.'
+verification-recovery-codes: ' &8[&6#&8] &cThis is your recovery codes: &e{codes}'
+successfully-disable-verification-by-admin: ' &8[&6#&8] &cSuccessfully disable 2fa
+  verification for &e{username}'
