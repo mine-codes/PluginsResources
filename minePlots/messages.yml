@@ -1,0 +1,426 @@
+################################################
+#                    minePlot                  #
+#     The best plugin for players cuboids!     #
+#                                              #
+#          Messages configuration file         #
+#                                              #
+#                     Note                     #
+#    Messages support hex colors (#FFFFFF)     #
+# English translation may not be 100% accurate #
+#                                              #
+################################################
+
+#PL: Gdy gracz chce się teleportować podczas teleportacji.
+#EN: When a player wants to teleport while teleporting.
+already-teleport: '&cCurrently you are already during teleportation.'
+#PL: Gdy administrator integruje się z działką (wiadomość na ActionBar).
+#EN: When an administrator integrates with a plot (message on ActionBar).
+integration-witch-plot-by-admin: '&cYou interact with the plot you are currently on
+  as an administrator!'
+#PL: Tekst gdy podana nazwa jest za długa.
+#EN: Text when the given name is too long.
+too-long-plot-name: The name is too long!
+#PL: Gdy gracz pomyślnie się przeteleportuje.
+#EN: When a player has successfully teleported.
+teleport-successfully: '&aYou have been successfully transported!'
+#PL: Nazwa zmiennej gdy gracz jest online.
+#EN: The name of the variable when the player is online.
+online-status-member: '&aAvaliable!'
+#PL: Gdy gracz zostanie dodany do działki przez admina.
+#PL: Dostepne zmienne: {name}, {player}
+#EN: When a player is added to a plot by an admin
+#EN: Available variables: {name}, {player}
+successfully-added-you-to-plot: '&aYou have been added to plot {name} by {player}'
+#PL: Gdy gracz nie posiada uprawnień do akcji którą próbuje wykonać.
+#EN: When a player does not have permission to the action they are trying to perform.
+dont-have-permission-for-action: '&cYou do not have authority for this action.'
+#PL: Gdy zostanie włączone latanie na działce dzięki uprawnieniu.
+#EN: When flying on the lot due to entitlement is enabled.
+flying-successfully-enabled: '&aSuccessfully enabled flying on the plot terrain.'
+#PL: Lista komend dla graczy.
+#EN: List of commands for players.
+plots-usage-commands:
+  - ' &8●●●●●●●●●●●● &a✪ &8●●●●●●●●●●●●'
+  - ' &8>> &7/plot help - &eShow this commands list.'
+  - ' &8>> &7/plot accept <id> - &eAccept invite to plot.'
+  - ' &8>> &7/plot info - &eShow information about plot.'
+  - ' &8>> &7/plot crafting - &eShow plot block crafting recipe.'
+  - ' &8>> &7/plot invite <username> - &eInvite player to plot.'
+  - ' &8>> &7/plot kick <username> - &eKick member rom plot.'
+  - ' &8>> &7/plot leave - &eLeave plot members.'
+  - ' &8>> &7/plot limits - &eShow player limits.'
+  - ' &8>> &7/plot panel - &eOpen plot panel gui.'
+  - ' &8>> &7/plot close - &eClosing plot territory.'
+  - ' &8>> &7/plot open - &eOpening plot territory.'
+  - ' &8>> &7/plot home - &eTeleport to plot home.'
+  - ' &8>> &7/plot visualize - &eVisualize plot borders.'
+  - ' &8>> &7/plot sethome - &eSetup plot home location.'
+  - ' &8●●●●●●●●●●●● &a✪ &8●●●●●●●●●●●●'
+#PL: Gdy osoba zapraszająca anuluje zaproszenie.
+#PL: Dostępne zmienne: {target}
+#EN: When the inviting person cancels the invitation
+#EN: Available variables: {target}
+successfully-canceled-invite: '&cSuccessfully cancelled invitation for player {target}'
+#PL: Gdy gracz próbuje stworzyć działke w niedozwolonym świecie.
+#EN: When a player attempts to create a plot in an unauthorized world.
+this-world-is-disable-fro-creating-plot: '&cThis world is excluded from plot creation.'
+#PL: Gdy gracz pottwierdzi usunięcie działki.
+#EN: When the player confirms the removal of the plot.
+successfully-delete-plot: '&aSuccessfully removed the plot!'
+#PL: Lista komend dla administracji.
+#EN: List of commands for administration.
+plots-usage-admin-commands:
+  - ' &8●●●●●●●●●●●● &c۩ &8●●●●●●●●●●●●'
+  - ' &8>> &7/plotsadmin help - &eShow this commands list.'
+  - ' &8>> &7/plotsadmin reload - &eReload plugin configs.'
+  - ' &8>> &7/plotsadmin give <username> - &eGive plot block for player.'
+  - ' &8>> &7/plotsadmin add <username> - &eAdd member to plot by admin.'
+  - ' &8>> &7/plotsadmin kick <username> - &eKick member from plot by admin.'
+  - ' &8>> &7/plotsadmin plots <username> - &eCheck player plots list.'
+  - ' &8●●●●●●●●●●●● &c۩ &8●●●●●●●●●●●●'
+#PL: Gdy graczw wpisze w niepoprawdny sposób komendę.
+#EN: When a player types a command incorrectly.
+command-usage: '&cCorrect command usage: {usage}'
+#PL: Gdy gracz sprwadzi swoje limity.
+#EN: Once a player has tested their limits.
+limits-message:
+  - ' &8●●●●●●●●●●●● &6✿ &8●●●●●●●●●●●●'
+  - ' &8>> &7Maximum number of jugs: &e{plots}'
+  - ' &8>> &7Maximum lot size: &e{size}'
+  - ' &8>> &7Maximum number of slots per plot: &e{slots}'
+  - ' &8●●●●●●●●●●●● &6✿ &8●●●●●●●●●●●●'
+#PL: Gdy w miejscu gracza nie ma działki.
+#EN: When there is no plot at the player's location.
+here-is-not-plot: '&cThere is no plot at this location!'
+#PL: Gdy gracz powiększy limit wielkości działki.
+#PL: Dostępne zmienne: {blocks}
+#EN: When a player increases the plot size limit
+#EN: Available variables: {blocks}
+successfully-upgrade-size: '&aSuccessfully increased the plot size limit to {blocks}
+  from the center.'
+#PL: Gdy gracz zaakceptuje dołączenie do działki.
+#PL: Dostępne zmienne: {name}
+#EN: When the player accepts to join the plot
+#EN: Available variables: {name}
+successfully-accepted-join: '&aSuccessfully accepted to join the {name} plot.'
+#PL: Gdy działka o podanym id nie istnieje.
+#EN: When a plot with the specified id does not exist.
+plot-with-this-id-is-not-exists: '&cThe plot of land with this id does not exist.'
+#PL: Nazwa zmiennej gdy gracz nie jest online.
+#EN: The name of the variable when the player is not online.
+offline-status-member: '&cNot available!'
+#PL: Nazwa zmiennej gdy gracz nie posiada uprawnienia działki.
+#EN: The name of the variable when the player does not have plot privileges.
+dont-have-member-permission-lore: '&cNo'
+#PL: Gdy gracz zamknie teren działki.
+#EN: When a player closes the plot area.
+successfully-plot-closed: '&aThe plot area was successfully closed.'
+#PL: Gdy gracz chce opuścić działkę której nie jest członkiem.
+#EN: When a player wants to leave a plot of which he is not a member.
+you-are-not-member: '&cThis player is not a member of the plot.'
+#PL: Gdy gracz doda flagę.
+#PL: Dostępne zmienne: {name}
+#EN: When a player adds a flag
+#EN: Available variables: {name}
+successfully-added-flag: '&aSuccessfully added the {name} flag to the plot.'
+#PL: Gdy admin doda gracza do działki.
+#PL: Dostępne zmienne: {target}, {name}
+#EN: When an admin adds a player to a plot
+#EN: Available variables: {target}, {name}
+successfully-added-to-plot: '&aYou have added player {target} to plot {name}'
+#PL: Gdy gracz próuje teleportować się na zamkniętą działkę.
+#EN: When a player tries to teleport to a closed plot.
+plot-terrain-is-closed-on-teleport: '&cIn the area you want to teleport to, there
+  is a plot that has a closed area.'
+#PL: Gdy gracz chce włączyć wizualizację gdy jest już włączona.
+#EN: When the player wants to enable the visualization when it is already on.
+visualize-is-already-enabled: '&cVisualization of the plot is now included.'
+#PL: Informacje o działce.
+#PL: Dostępne zmienne: {name}, {owner}, {center}, {expireIn}, {size}, {members}
+#EN: Plot information
+#EN: Available variables: {name}, {owner}, {center}, {expireIn}, {size}, {members}
+plot-information:
+  - ''
+  - ' &8# &7Id: &e{id}'
+  - ' &8# &7Name: &e{name}'
+  - ' &8# &7Owner: &e{owner}'
+  - ' &8# &7Center: &e{center}'
+  - ' &8# &7Expire in: &e{expireIn}'
+  - ' &8# &7Size: &e{size}'
+  - ' &8# &7Members size: &e{members}/{slots}'
+  - ''
+#PL: Gdy gracz użyje zablokowanej nazwy działki.
+#EN: When a player uses blocked plot name.
+blocked-plot-name: Blocked name!
+#PL: Gdy gracza bez wymaganych uprawnień lata poza działką.
+#EN: When a player without the required credentials flies off the lot.
+flying-is-disabled-outside-the-plot: '&cFlying is disabled outside the plot area without
+  the &eplots.flying.bypass &cpermission.'
+#PL: Gdy admin da blok działki graczu.
+#PL: Dostępne zmienne: {target}
+#EN: When an admin gives a plot block to a player
+#EN: Available variables: {target}
+successfully-give-plot-block: '&aA plot block for player {target} was successfully
+  given.'
+#PL: Nazwa zmiennej gdy gracz posiada uprawnienie działki.
+#EN: The name of the variable when the player has the plot permission.
+has-member-permission-lore: '&aYes'
+#PL: Gdy plugin napotka błąd podczas przeładowania.
+#EN: When the plugin encounters an error while reloading.
+failed-reload-configs: '&cReloading configuration encountered an error, please check
+  your console.'
+#PL: Gdy gracz otrzyma zaproszenie od kogoś do działki.
+#PL: Dostępne zmienne: {name}, {player}, {id}
+#EN: When a player receives an invitation from someone to a plot
+#EN: Available variables: {name}, {player}, {id}
+successfully-your-invited-to-plot: '&aYou have received an invitation to {name} player
+  {player}''s plot. To accept, type &e/plot accept {id}'
+#PL: Gdy gracz opuszcza teren czyjejś działki.
+#PL: Dostępne zmienne: {name}, {owner}
+#EN: When a player leaves the area of someone else's plot
+#EN: Available variables: {name}, {owner}
+player-leave-from-plot: '&cYou have left the area of the plot &e{name} &cowned by
+  &6{owner}!'
+#PL: Gdy zmienna nie będzie posidała danych.
+#EN: When placeholder dont have data.
+data-not-available-placeholder: '&cData not available!'
+#PL: Nazwa zmiennej gdy flaga jest dodana.
+#EN: The name of the variable when the flag is added.
+flag-added: '&aAdded'
+#PL: Gdy gracz rozpocznie teleportacje.
+#EN: When the player starts teleporting.
+teleport-in: '&aTeleportation will occur in {seconds}.'
+#PL: Gdy gracz nie posiada żadnej działki.
+#EN: When a player has no plot.
+you-dont-have-any-plot: '&cYou don''t own any land.'
+#PL: Gdy plugin zostanie przeładowany.
+#EN: When the plugin is reloaded.
+successfully-reload-configs: '&aSuccessfully reloaded configurations!'
+#PL: Gdy odległość od innych działek jest mniejsza niż minimalna podana w konfiguracji.
+#EN: When the distance to other parcels is less than the minimum specified in the configuration.
+small-distance-to-other-plot: '&cThe distance from other parcels is too short.'
+#PL: Gdy zaproszenie który próbuje ktoś zaakceptować nie istnieje.
+#EN: When the invitation that someone is trying to accept does not exist.
+invite-is-not-exists: '&cSuch an invitation does not exist!'
+#PL: Gdy gracz próbuje wykonać jakąś akcje na sobie.
+#EN: When a player tries to perform some action on himself.
+this-player-its-can-be-you: '&cThat player may not be you.'
+#PL: Gdy gracz pomyślnie zmieni nazwe działki.
+#PL: Dostępne zmienne: {name}
+#EN: When a player successfully renames a plot
+#EN: Available variables: {name}
+successfully-rename-plot: '&aSuccessfully renamed the plot to {name}.'
+#PL: Gdy gracz wchodzi na teren czyjąś działke.
+#PL: Dostępne zmienne: {name}, {owner}
+#EN: When a player enters someone else's land
+#EN: Available variables: {name}, {owner}
+player-entry-to-plot: '&aYou have trespassed on a plot of land &e{name} &awhich is
+  owned by &6{owner}!'
+#PL: Gdy gracz użyje niedozwolonych znaków.
+#EN: When a player uses forbidden characters.
+bad-plot-name: Wrong name!
+#PL: Gdy gracz ukryje blok działki.
+#EN: When a player hides a plot block.
+successfully-hide-plot-block: '&aA block of land was successfully hidden.'
+#PL: Gdy gracz nada uprawnienie dla członka działki.
+#PL: Dostępne zmienne: {permission}, {target}
+#EN: When a player assigns an entitlement to a plot member
+#EN: Available variables: {permission}, {target}
+successfully-added-permission: '&aSuccessfully granted {permission} permission for
+  {target}'
+#PL: Gdy gracz ukryje blok działki.
+#EN: When the player hides the plot block.
+successfully-hide-plot-hologram: '&aA hologram of the plot was successfully hidden.'
+#PL: Gdy gracz nie posiada wymaganego uprawnienia działki.
+#EN: When a player does not have the required plot authority.
+dont-have-that-member-permission: '&cYou are not qualified to do this!'
+#PL: Nazwa zmiennej gdy flaga jest usunięta.
+#EN: The name of the variable when the flag is cleared.
+flag-removed: '&cRemoved'
+#PL: Gdy gracz osiągnie limit slotów działki.
+#PL: Dostępne zmienne: {slots}
+#EN: When a player reaches the plot slot limit
+#EN: Available variables: {slots}
+limit-slots: '&cThe plot slot limit {slots} has been reached!'
+#PL: Nazwa gui nazywania działki.
+#EN: Plot naming gui.
+set-plot-name-gui-title: '&8Set plot name'
+#PL: Gdy gracz włączy wizualizacje działki.
+#PL: Dostępne zmienne: {seconds}
+#EN: When the player turns on the plot visualization
+#EN: Available variables: {seconds}
+successfully-enable-visualize: '&aSuccessfully enabled plot visualizations for &e{seconds}
+  sec.'
+#PL: Konfiguracja wiadomości dotyczących komend.
+#EN: Configuring command messages.
+acf-core:
+  unknown_command: '&cThere is no such command. Try using: &e/help.'
+  help_format: '{command} {parameters} {separator} {description}'
+  permission_denied: '&cI''m sorry, but you do not have authority for this command.'
+  must_be_min_length: '&cThe argument must have at least {min} characters/characters.'
+  invalid_syntax: '&cCorrect usage: &e{command} {syntax}.'
+  error_prefix: '&cError: {message}.'
+  not_allowed_on_console: '&cThe console cannot execute this command.'
+  error_generic_logged: '&cThere was an unexpected error that was logged.'
+  must_be_a_number: '&cThe argument must be a number!'
+  error_performing_command: '&cThere was an unexpected error that was logged.'
+  must_be_max_length: '&cAn argument must have at most {max} characters/characters.'
+  info_message: '&7{message}'
+  could_not_find_player: '&cPlayer name: &c{search} could not be found'
+  please_specify_one_of: '&cChoose one of the arguments given: &e{valid}'
+#PL: Gdy gracz usunie uprawnienie członkowi działki.
+#PL: Dostępne zmienne: {permission}, {target}
+#EN: When a player removes an entitlement from a plot member
+#EN: Available variables: {permission}, {target}
+successfully-removed-permission: '&aSuccessfully removed the {permission} permission
+  for {target}'
+#PL: Gdy gracz pomyślnie tworzy działkę.
+#EN: When a player successfully creates a plot.
+successfully-created-plot: '&aA plot has been successfully created!'
+#PL: Gdy gracz będzie znajdował się na działce która została zamknięta.
+#EN: When a player is in a plot that has been closed.
+plot-you-were-on-has-been-closed: '&cThe plot you were on has been closed. You have
+  been transported to the spawn!'
+#PL: Gdy gracz otworzy teren działki.
+#EN: When a player opens a plot area.
+successfully-plot-opened: '&aThe plot area was successfully opened.'
+#PL: Ukazany w gui opis flagi.
+#PL: Dostępne zmienne: {description}, {toggle}
+#EN: Flag description shown in gui
+#EN: Available variables: {description}, {toggle}
+flags-gui-item-lore:
+  - ''
+  - '&7Added flag prevents: '
+  - ', &8>> &e{description}'
+  - '&7Flag currently is {toggle}'
+  - ''
+  - '&e&nClick to add or remove a flag.'
+#PL: Gdy gracz nie jest właścicelem działki.
+#EN: When a player is not the owner of the plot.
+you-are-not-owner: '&cYou do not own the land.'
+#PL: Domyślny tekst z gui nazywania działki.
+#EN: Default text from the plot naming gui.
+plot-name-example: Example name
+#PL: Ogłoszenie gdy działką wygaśnie wysyła się jedybnie gdy jest włączony w konfiguracji.
+#PL: Dostępne zmienne: {name}, {xyz}
+#EN: The announcement when the plot expires is sent only when it is enabled in the configuration.
+#EN: Available variables: {name}, {xyz}
+broadcast-during-the-expiry-of-validity:
+  - ''
+  - '&4&lAttention!'
+  - ''
+  - '&7The {name} plot has expired! Its cordylines are {xyz}'
+  - ''
+#PL: Gdy id działki zostanie źle podane.
+#EN: When the plot id is misspelled.
+plot-id-is-not-number: '&cThe parcel id is not a number.'
+#PL: Gdy gracz anuluje usunięcie działki.
+#EN: When a player cancels the removal of a plot.
+canceled-delete-plot: '&cPlot removal cancelled.'
+#PL: Gdy gracz zostanie poinformowany o wyrzuceniu.
+#PL: Dostępne zmienne: {name}, {player}
+#EN: When the player is informed of the ejection
+#EN: Available variables: {name}, {player}
+successfully-your-kick-from-plot: '&cYou were ejected from plot {name} by player {player}.'
+#PL: Gdy gracz nie posiada uprawnień do komendy.
+#PL: Dostępne zmienne: {permission}
+#EN: When a player does not have command privileges
+#EN: Available variables: {permission}
+dont-have-permission: '&cYou do not have permission: {permission}'
+#PL: Gdy gracz usunie flagę.
+#PL: Dostępne zmienne: {name}
+#EN: When a player removes a flag
+#EN: Available variables: {name}
+successfully-removed-flag: '&cSuccessfully removed the {name} flag to the plot.'
+#PL: Gdy gracz przywróci widoczność bloku działki.
+#EN: When the player restores visibility of the plot block.
+successfully-show-plot-block: '&aVisibility of the plot block was successfully restored.'
+#PL: Gdy gracz powiększy ilość slotów działki.
+#PL: Dostępne zmienne: {slots}
+#EN: When a player increases the number of plot slots
+#EN: Available variables: {slots}
+successfully-upgrade-slots: '&aSuccessfully increased the plot slot limit to {slots}!'
+#PL: Gdy gracz pomyślnie upuści działkę.
+#PL: Dostępne zmienne: {name}
+#EN: When a player successfully drops a plot
+#EN: Available variables: {name}
+successfully-leave-plot: '&cYou have successfully dropped the {name} plot.'
+#PL: Gdy podany gracz jest offline.
+#PL: Dostępne zmienne: {target}
+#EN: When the specified player is offline
+#EN: Available variables: {target}
+target-player-is-offline: '&cPlayer {target} is currently offline!'
+#PL: Gdy gracz zaprosi kogoś do działki.
+#PL: Dostępne zmienne: {name}, {target}
+#EN: When a player invites someone to the plot
+#EN: Available variables: {name}, {target}
+successfully-invite-player: '&aSuccessfully invited player {target} to plot {name}!'
+#PL: Gdy gracz próbuje zniszczyć blok działki.
+#EN: When a player tries to destroy a plot block.
+cant-break-plot-block: '&cYou can''t destroy the plot block!'
+#PL: Gdy gracz którego chce się wyrzucić nie jest dodany to działki.
+#EN: When the player you want to eject is not added to the plot.
+this-player-is-not-member: '&cThis player is not a member of the plot.'
+#PL: Gdy gracz próbuje wejść na teren zamkniętej działki.
+#EN: When a player attempts to enter a closed plot.
+plot-terrain-is-closed-on-entry: '&cThe area of this lot is gated!'
+#PL: Gdy zaproszenie do działki wygaśnie.
+#PL: Dostępne zmienne: {name}
+#EN: When an invitation to a plot expires
+#EN: Available variables: {name}
+plot-invite-time-out: '&cInvitation to {name}''s plot has expired!'
+#PL: Gdy odległość od innych działek jest mniejsza niż minimalna podana w konfiguracji.
+#EN: When the distance to other parcels is less than the minimum specified in the configuration.
+small-distance-to-spawn: '&cThe distance from the spawn is too short.'
+#PL: Gdy gracz pomyślnie ustawi nowy dom działki.
+#EN: When a player successfully sets up a new plot house.
+successfully-set-home: '&aSuccessfully set up a new lot home!'
+#PL: Gdy gracz osiągnie limit wielkości działki.
+#PL: Dostępne zmienne: {blocks}
+#EN: When the player reaches the plot size limit
+#EN: Available variables: {blocks}
+limit-size: '&cThe plot size limit {blocks} from the center has been reached.'
+#PL: Gdy gracz przedłuży ważność działki.
+#PL: Dostępne zmienne: {hours}, {price}
+#EN: When the player extends the validity of the plot
+#EN: Available variables: {hours}, {price}
+successfully-extended-expire: '&aSuccessfully extended the validity of the plot by
+  {hours} hours for {price}$.'
+#PL: Gdy gracz podczas dołączenie nie będzie już miał miejsca w danej działce.
+#EN: When a player no longer has space in a particular plot when joining.
+plot-has-maximum-members: '&cThe plot you want to join already has the myximum number
+  of members.'
+#PL: Gdy gracz się poruszy i teleportacja zostanie anulowana.
+#EN: When the player moves and the teleportation is canceled.
+teleport-canceled: '&cTeleportation has been cancelled!'
+#PL: Gdy gracza którego chce się zaprosić jest już dodany do działki.
+#EN: When the player you want to invite is already added to the plot.
+this-player-is-already-member: '&cThis player is already added to the plot.'
+#PL: Gdy gracz próbuje zamknąc zamkniętą już działkę.
+#EN: When a player tries to close an already closed plot.
+plot-already-closed: '&cThe plot is now closed.'
+#PL: Gdy gracz osiągnie limit działek.
+#PL: Dostępne zmienne: {limit}
+#EN: When a player reaches the limit of plots
+#EN: Available variables: {limit}
+limit-plots: '&cPlot limit {limit} has been reached!'
+#PL: Gdy gracz przywróci widoczność bloku działki.
+#EN: When the player restores visibility of the plot block.
+successfully-show-plot-hologram: '&aThe visibility of the plot hologram has been successfully
+  restored.'
+#PL: Gdy gracz próbuje otwrzyć otwartą już działkę.
+#EN: When a player tries to open an already open plot.
+plot-already-opened: '&cThe plot is now open.'
+#PL: Gdy gracz nie posiada uprawnień do działki i jest ona chroniona flagą na daną czynność.
+#PL: Dostępne zmienne: {flag}, {description}
+#EN: When a player does not have rights to a plot and it is protected by a flag for an action.
+#EN: Available variables: {flag}, {description}
+information-about-flag: '&cThe plot is protected by a flag &4{flag} &c which blocks
+  &e{description}'
+#PL: Gdy gracz nie posiada fundyszy.
+no-founds: '&cLack of funding.'
+#PL: Gdy gracz zostanie wurzucony z działki.
+#PL: Dostępne zmienne: {target}
+#EN: When a player is ejected from a plot
+#EN: Available variables: {target}
+successfully-kick-member: '&cSuccessfully ejected player {target} from the plot.'
