@@ -1,0 +1,418 @@
+################################################
+#                    minePlot                  #
+#     The best plugin for players cuboids!     #
+#                                              #
+#          Messages configuration file         #
+#                                              #
+#                     Note                     #
+#    Messages support hex colors (#FFFFFF)     #
+# English translation may not be 100% accurate #
+# Polish translation made by goodplay.pl       #
+#                                              #
+################################################
+#PL: Lista komend dla administracji.
+#EN: List of commands for administration.
+plots-usage-admin-commands:
+  - ' &8●●●●●●●●●●●● &c۩ &8●●●●●●●●●●●●'
+  - ' &8>> &7/plotsadmin help - &eShow this commands list.'
+  - ' &8>> &7/plotsadmin reload - &eReload plugin configs.'
+  - ' &8>> &7/plotsadmin give <username> - &eGive plot block for player.'
+  - ' &8>> &7/plotsadmin add <username> - &eAdd member to plot by admin.'
+  - ' &8>> &7/plotsadmin kick <username> - &eKick member from plot by admin.'
+  - ' &8>> &7/plotsadmin plots <username> - &eCheck player plots list.'
+  - ' &8●●●●●●●●●●●● &c۩ &8●●●●●●●●●●●●'
+#PL: Lista komend dla graczy.
+#EN: List of commands for players.
+plots-usage-commands:
+  - ' &8&l>> &a/dzialka panel&7 - Otwiera panel dzialki'
+  - ' &8&l>> &a/dzialka info&7 - Pokazuje informacje dzialki'
+  - ' &8&l>> &a/dzialka sethome&7 - Ustawia dom dzialki'
+  - ' &8&l>> &a/dzialka home&7 - Teleportuje do dzialki'
+  - ' &8&l>> &a/dzialka leave&7 - Opuszcza dzialke'
+  - ' &8&l>> &a/dzialka kick <nick>&7 - Wyrzuca danego gracza z dzialki'
+  - ' &8&l>> &a/dzialka invite <nick>&7 - Otwiera panel dzialki'
+  - ' &8&l>> &a/dzialka accept <id>&7 - Otwiera panel dzialki'
+  - ' &8&l>> &a/dzialka visualize &7 - Pokazuje granice dzialki'
+  - ' &8&l>> &a/dzialka open &7 - Otwiera dzialke dla innych graczy'
+  - ' &8&l>> &a/dzialka close &7 - Zamyka dzialke dla innych graczy'
+  - ' &8&l>> &a/dzialka limits &7 - Pokazuje limity dzialek dla Ciebie'
+  - ' &8&l>> &a/dzialka crafting &7 - Pokazuje crafting dzialki'
+#PL: Gdy odlegkosc od innych dziakek jest mniejsza niz minimalna podana w konfiguracji.
+#EN: When the distance to other parcels is less than the minimum specified in the configuration.
+small-distance-to-other-plot: '&cOdleglosc od innych dzialek jest zbyt mala.'
+#PL: Gdy gracz pomyslnie tworzy dziakke.
+#EN: When a player successfully creates a plot.
+successfully-created-plot: '&aPomyslnie stworzono dzialke!'
+#PL: Gdy graczw wpisze w niepoprawdny sposób komende.
+#EN: When a player types a command incorrectly.
+command-usage: '&cNiepoprane uzycie komendy wpisz'
+#PL: Gdy gracz nie posiada uprawnien do komendy.
+#PL: Dostepne zmienne: {permission}
+#EN: When a player does not have command privileges
+#EN: Available variables: {permission}
+dont-have-permission: '&cNie posiadasz uprawnien.'
+#PL: Gdy podany gracz jest offline.
+#PL: Dostepne zmienne: {target}
+#EN: When the specified player is offline
+#EN: Available variables: {target}
+target-player-is-offline: '&cGracz {target} jest aktualnie offline!'
+#PL: Gdy admin da blok dziakki graczu.
+#PL: Dostepne zmienne: {target}
+#EN: When an admin gives a plot block to a player
+#EN: Available variables: {target}
+successfully-give-plot-block: '&aPomyslnie dano blok dzialki dla gracza {target}.'
+#PL: Gdy gracz nie posiada uprawnien do dziakki i jest ona chroniona flagą na daną czynnosc.
+#PL: Dostepne zmienne: {flag}, {description}
+#EN: When a player does not have rights to a plot and it is protected by a flag for an action.
+#EN: Available variables: {flag}, {description}
+information-about-flag: '&cDzialka jest zabezpieczona flagą &4{flag} &cktora blokuje
+  &e{description}'
+#PL: Gdy administrator integruje sie z dziakką (wiadomosc na ActionBar).
+#EN: When an administrator integrates with a plot (message on ActionBar).
+integration-witch-plot-by-admin: '&cIntergujesz w dzialke na ktorej aktualnie jestes
+  jako administrator!'
+#PL: Gdy gracz wchodzi na teren czyjąs dziakke.
+#PL: Dostepne zmienne: {name}, {owner}
+#EN: When a player enters someone else's land
+#EN: Available variables: {name}, {owner}
+player-entry-to-plot: '&aWkroczyles na teren dzialki &e{name} &aktorej wlascicielem
+  jest &6{owner}!'
+#PL: Gdy gracz opuszcza teren czyjejs dziakki.
+#PL: Dostepne zmienne: {name}, {owner}
+#EN: When a player leaves the area of someone else's plot
+#EN: Available variables: {name}, {owner}
+player-leave-from-plot: '&cWyszedles z terenu dzialki &e{name} &cktorej wlascicielem
+  jest &6{owner}!'
+#PL: Gdy gracz próbuje zniszczyc blok dziakki.
+#EN: When a player tries to destroy a plot block.
+cant-break-plot-block: '&cNie mozesz zniszczyc bloku dzialki!'
+#PL: Nazwa gui nazywania dziakki.
+#EN: Plot naming gui.
+set-plot-name-gui-title: '&8Ustaw nazwe dzialki'
+#PL: Tekst gdy podana nazwa jest za dkuga.
+#EN: Text when the given name is too long.
+too-long-plot-name: Nazwa jest za dluga!
+#PL: Gdy gracz uzyje niedozwolonych znaków.
+#EN: When a player uses forbidden characters.
+bad-plot-name: Zla nazwa!
+#PL: Gdy gracz pomyslnie zmieni nazwe dziakki.
+#PL: Dostepne zmienne: {name}
+#EN: When a player successfully renames a plot
+#EN: Available variables: {name}
+successfully-rename-plot: '&aPomyslnie zmieniono nazwe dzialki na {name}.'
+#PL: Domyslny tekst z gui nazywania dziakki.
+#EN: Default text from the plot naming gui.
+plot-name-example: Twoja nazwa
+#PL: Gdy gracz przywróci widocznosc bloku dziakki.
+#EN: When the player restores visibility of the plot block.
+successfully-show-plot-block: '&aPomyslnie przywrocono widocznosc bloku dzialki.'
+#PL: Gdy gracz ukryje blok dziakki.
+#EN: When a player hides a plot block.
+successfully-hide-plot-block: '&aPomyslnie ukryto blok dzialki.'
+#PL: Gdy gracz przywróci widocznosc bloku dziakki.
+#EN: When the player restores visibility of the plot block.
+successfully-show-plot-hologram: '&aPomyslnie przywrocono widocznosc hologramu dzialki.'
+#PL: Gdy gracz ukryje blok dziakki.
+#EN: When the player hides the plot block.
+successfully-hide-plot-hologram: '&aPomyslnie ukryto hologram dzialki.'
+#PL: Ukazany w gui opis flagi.
+#PL: Dostepne zmienne: {description}, {toggle}
+#EN: Flag description shown in gui
+#EN: Available variables: {description}, {toggle}
+flags-gui-item-lore:
+  - ''
+  - '&7Dodana flaga uniemozliwia: '
+  - '   &8>> &e{description}'
+  - '&7Flaga aktualnie jest {toggle}'
+  - ''
+  - '&e&nKliknij aby dodac lub usunąc flage.'
+#PL: Informacje o dziakce.
+#PL: Dostepne zmienne: {name}, {owner}, {center}, {expireIn}, {size}, {members}
+#EN: Plot information
+#EN: Available variables: {name}, {owner}, {center}, {expireIn}, {size}, {members}
+plot-information:
+  - ''
+  - ' &8# &7Nazwa: &e{name}'
+  - ' &8# &7Wlasciciel: &e{owner}'
+  - ' &8# &7srodek: &e{center}'
+  - ' &8# &7Waznosc: &e{expireIn}'
+  - ' &8# &7Wielkosc: &e{size}x{size}'
+  - ' &8# &7Ilosc czlonkow: &e{members}'
+  - ''
+#PL: Nazwa zmiennej gdy flaga jest dodana.
+#EN: The name of the variable when the flag is added.
+flag-added: '&aDodana'
+#PL: Nazwa zmiennej gdy flaga jest usunieta.
+#EN: The name of the variable when the flag is cleared.
+flag-removed: '&cUsunieta'
+#PL: Gdy gracz doda flage.
+#PL: Dostepne zmienne: {name}
+#EN: When a player adds a flag
+#EN: Available variables: {name}
+successfully-added-flag: '&aPomyslnie dodano flage {name} do dzialki.'
+#PL: Gdy gracz usunie flage.
+#PL: Dostepne zmienne: {name}
+#EN: When a player removes a flag
+#EN: Available variables: {name}
+successfully-removed-flag: '&cPomyslnie usunieto flage {name} do dzialki.'
+#PL: Gdy gracz anuluje usuniecie dziakki.
+#EN: When a player cancels the removal of a plot.
+canceled-delete-plot: '&cAnulowano usuwanie dzialki.'
+#PL: Gdy gracz pottwierdzi usuniecie dziakki.
+#EN: When the player confirms the removal of the plot.
+successfully-delete-plot: '&aPomyslnie usunieto dzialke!'
+#PL: Gdy w miejscu gracza nie ma dziakki.
+#EN: When there is no plot at the player's location.
+here-is-not-plot: '&cTutaj nie ma dzialki.'
+#PL: Gdy gracz nie posiada uprawnien do akcji którą próbuje wykonac.
+#EN: When a player does not have permission to the action they are trying to perform.
+dont-have-permission-for-action: '&cNie posiadasz uprawnien do tej akcji.'
+#PL: Gdy gracz zaprosi kogos do dziakki.
+#PL: Dostepne zmienne: {name}, {target}
+#EN: When a player invites someone to the plot
+#EN: Available variables: {name}, {target}
+successfully-invite-player: '&aPomyslnie zaproszono gracza {target} do dzialki {name}!'
+#PL: Gdy gracz otrzyma zaproszenie od kogos do dziakki.
+#PL: Dostepne zmienne: {name}, {player}, {id}
+#EN: When a player receives an invitation from someone to a plot
+#EN: Available variables: {name}, {player}, {id}
+successfully-your-invited-to-plot: '&aOtrzymales zaproszenie do dzialki {name} gracza
+  {player}. Aby zaakceptowac wpisz &e/dzialka accept {id}'
+#PL: Gdy zaproszenie do dziakki wygasnie.
+#PL: Dostepne zmienne: {name}
+#EN: When an invitation to a plot expires
+#EN: Available variables: {name}
+plot-invite-time-out: '&cZaproszenie do dzialki {name} wygaslo!'
+#PL: Gdy id dziakki zostanie źle podane.
+#EN: When the plot id is misspelled.
+plot-id-is-not-number: '&cId dzialki nie jest numerem.'
+#PL: Gdy dziakka o podanym id nie istnieje.
+#EN: When a plot with the specified id does not exist.
+plot-with-this-id-is-not-exists: '&cDzialka o tym id nie istnieje.'
+#PL: Gdy gracz zaakceptuje dokączenie do dziakki.
+#PL: Dostepne zmienne: {name}
+#EN: When the player accepts to join the plot
+#EN: Available variables: {name}
+successfully-accepted-join: '&aPomyslnie zaakceptowano dolączenie do dzialki {name}'
+#PL: Gdy zaproszenie który próbuje ktos zaakceptowac nie istnieje.
+#EN: When the invitation that someone is trying to accept does not exist.
+invite-is-not-exists: '&cTakie zaproszenie nie istnieje!'
+#PL: Gdy gracz próbuje wykonac jakąs akcje na sobie.
+#EN: When a player tries to perform some action on himself.
+this-player-its-can-be-you: '&cTym graczem nie mozesz byc ty.'
+#PL: Gdy gracza którego chce sie zaprosic jest juz dodany do dziakki.
+#EN: When the player you want to invite is already added to the plot.
+this-player-is-already-member: '&cTen gracz jest juz dodany do dzialki.'
+#PL: Gdy gracz którego chce sie wyrzucic nie jest dodany to dziakki.
+#EN: When the player you want to eject is not added to the plot.
+this-player-is-not-member: '&cTen gracz nie jest czlonkiem dzialki.'
+#PL: Gdy gracz chce opuscic dziakke której nie jest czkonkiem.
+#EN: When a player wants to leave a plot of which he is not a member.
+you-are-not-member: '&cTen gracz nie jest czlonkiem dzialki.'
+#PL: Gdy osoba zapraszająca anuluje zaproszenie.
+#PL: Dostepne zmienne: {target}
+#EN: When the inviting person cancels the invitation
+#EN: Available variables: {target}
+successfully-canceled-invite: '&cPomyslnie anulowano zaproszenie dla gracza {target}'
+#PL: Gdy gracz zostanie wurzucony z dziakki.
+#PL: Dostepne zmienne: {target}
+#EN: When a player is ejected from a plot
+#EN: Available variables: {target}
+successfully-kick-member: '&cPomyslnie wyrzucono gracza {target} z dzialki.'
+#PL: Gdy gracz zostanie poinformowany o wyrzuceniu.
+#PL: Dostepne zmienne: {name}, {player}
+#EN: When the player is informed of the ejection
+#EN: Available variables: {name}, {player}
+successfully-your-kick-from-plot: '&cZostales wyrzucony z dzialki {name} przez gracza
+  {player}.'
+#PL: Gdy gracz pomyslnie upusci dziakke.
+#PL: Dostepne zmienne: {name}
+#EN: When a player successfully drops a plot
+#EN: Available variables: {name}
+successfully-leave-plot: '&cPomyslnie upusciles dzialke {name}.'
+#PL: Nazwa zmiennej gdy gracz jest online.
+#EN: The name of the variable when the player is online.
+online-status-member: '&aDostepny!'
+#PL: Nazwa zmiennej gdy gracz nie jest online.
+#EN: The name of the variable when the player is not online.
+offline-status-member: '&cNie dostepny!'
+#PL: Nazwa zmiennej gdy gracz posiada uprawnienie dziakki.
+#EN: The name of the variable when the player has the plot permission.
+has-member-permission-lore: '&aTak'
+#PL: Nazwa zmiennej gdy gracz nie posiada uprawnienia dziakki.
+#EN: The name of the variable when the player does not have plot privileges.
+dont-have-member-permission-lore: '&cNie'
+#PL: Gdy gracz nie posiada wymaganego uprawnienia dziakki.
+#EN: When a player does not have the required plot authority.
+dont-have-that-member-permission: '&cNie posiadasz do tego uprawnien!'
+#PL: Gdy gracz nie jest wkascicelem dziakki.
+#EN: When a player is not the owner of the plot.
+you-are-not-owner: '&cNie jestes wlascicielem dzialki.'
+#PL: Gdy gracz pomyslnie ustawi nowy dom dziakki.
+#EN: When a player successfully sets up a new plot house.
+successfully-set-home: '&aPomyslnie ustawiono nowy dom dzialki!'
+#PL: Gdy gracz nie posiada zadnej dziakki.
+#EN: When a player has no plot.
+you-dont-have-any-plot: '&cNie posiadasz zadnej dzialki.'
+#PL: Gdy gracz wkączy wizualizacje dziakki.
+#PL: Dostepne zmienne: {seconds}
+#EN: When the player turns on the plot visualization
+#EN: Available variables: {seconds}
+successfully-enable-visualize: '&aPomyslnie wlączono wizualizacje dzialki na &e{seconds}
+  sek.'
+#PL: Gdy gracz chce wkączyc wizualizacje gdy jest juz wkączona.
+#EN: When the player wants to enable the visualization when it is already on.
+visualize-is-already-enabled: '&cWizualizacja dzialki jest juz wlączona.'
+#PL: Gdy gracz nada uprawnienie dla czkonka dziakki.
+#PL: Dostepne zmienne: {permission}, {target}
+#EN: When a player assigns an entitlement to a plot member
+#EN: Available variables: {permission}, {target}
+successfully-added-permission: '&aPomyslnie nadano uprawnienie {permission} dla {target}'
+#PL: Gdy gracz usunie uprawnienie czkonkowi dziakki.
+#PL: Dostepne zmienne: {permission}, {target}
+#EN: When a player removes an entitlement from a plot member
+#EN: Available variables: {permission}, {target}
+successfully-removed-permission: '&aPomyslnie usunieto uprawnienie {permission} dla
+  {target}'
+#PL: Gdy gracz przedkuzy waznosc dziakki.
+#PL: Dostepne zmienne: {hours}, {price}
+#EN: When the player extends the validity of the plot
+#EN: Available variables: {hours}, {price}
+successfully-extended-expire: '&aPomyslnie przedluzono waznosc dzialki o {hours} godzin
+  za {price}$.'
+#PL: Ogkoszenie gdy dziakką wygasnie wysyka sie jedybnie gdy jest wkączony w konfiguracji.
+#PL: Dostepne zmienne: {name}, {xyz}
+#EN: The announcement when the plot expires is sent only when it is enabled in the configuration.
+#EN: Available variables: {name}, {xyz}
+broadcast-during-the-expiry-of-validity:
+  - ''
+  - '&4&lUwaga!'
+  - ''
+  - '&7Dzialka {name} wygasla! Jej kordynaty to {xyz}'
+  - ''
+#PL: Gdy gracz pomyslnie sie przeteleportuje.
+#EN: When a player has successfully teleported.
+teleport-successfully: '&aZostales pomyslnie przeteleportowany!'
+#PL: Gdy gracz sie poruszy i teleportacja zostanie anulowana.
+#EN: When the player moves and the teleportation is canceled.
+teleport-canceled: '&cTeleportacja zostala anulowana!'
+#PL: Gdy gracz chce sie teleportowac podczas teleportacji.
+#EN: When a player wants to teleport while teleporting.
+already-teleport: '&cAktualnie jestes juz podczas teleportacji.'
+#PL: Gdy gracz rozpocznie teleportacje.
+#EN: When the player starts teleporting.
+teleport-in: '&aTeleportacja nastąpi za {seconds} sekund.'
+#PL: Gdy gracz nie posiada fundyszy.
+no-founds: '&cBrak funduszy.'
+#PL: Gdy admin doda gracza do dziakki.
+#PL: Dostepne zmienne: {target}, {name}
+#EN: When an admin adds a player to a plot
+#EN: Available variables: {target}, {name}
+successfully-added-to-plot: '&aDodales gracza {target} do dzialki {name}'
+#PL: Gdy gracz zostanie dodany do dziakki przez admina.
+#PL: Dostepne zmienne: {name}, {player}
+#EN: When a player is added to a plot by an admin
+#EN: Available variables: {name}, {player}
+successfully-added-you-to-plot: '&aZostales dodany do dzialki {name} przez {player}'
+#PL: Gdy gracz osiągnie limit dziakek.
+#PL: Dostepne zmienne: {limit}
+#EN: When a player reaches the limit of plots
+#EN: Available variables: {limit}
+limit-plots: '&cOsiągnieto limit dzialek {limit}!'
+#PL: Gdy gracz powiekszy ilosc slotów dziakki.
+#PL: Dostepne zmienne: {slots}
+#EN: When a player increases the number of plot slots
+#EN: Available variables: {slots}
+successfully-upgrade-slots: '&aPomyslnie powiekszono limit osob dzialki do {slots}!'
+#PL: Gdy gracz osiągnie limit slotów dziakki.
+#PL: Dostepne zmienne: {slots}
+#EN: When a player reaches the plot slot limit
+#EN: Available variables: {slots}
+limit-slots: '&cOsiągnieto limit osob dzialki {slots}!'
+#PL: Gdy gracz powiekszy limit wielkosci dziakki.
+#PL: Dostepne zmienne: {blocks}
+#EN: When a player increases the plot size limit
+#EN: Available variables: {blocks}
+successfully-upgrade-size: '&aPomyslnie powieknszono limit wielkosci dzialki do {blocks}
+  od srodka.'
+#PL: Gdy gracz osiągnie limit wielkosci dziakki.
+#PL: Dostepne zmienne: {blocks}
+#EN: When the player reaches the plot size limit
+#EN: Available variables: {blocks}
+limit-size: '&cOsiągnieto limit wielkosci dzialki {blocks} od srodka.'
+#PL: Gdy gracz podczas dokączenie nie bedzie juz miak miejsca w danej dziakce.
+#EN: When a player no longer has space in a particular plot when joining.
+plot-has-maximum-members: '&cDzialka do ktorej chcesz dolączyc ma juz myksymalną ilosc
+  czlonkow.'
+#PL: Gdy gracz próbuje stworzyc dziakke w niedozwolonym swiecie.
+#EN: When a player attempts to create a plot in an unauthorized world.
+this-world-is-disable-fro-creating-plot: '&cOdleglosc od spawnu jest zbyt mala.'
+#PL: Gdy plugin zostanie przekadowany.
+#EN: When the plugin is reloaded.
+successfully-reload-configs: '&cTen swiat jest wylączony z tworzenia dzialek.'
+#PL: Gdy plugin napotka bkąd podczas przekadowania.
+#EN: When the plugin encounters an error while reloading.
+failed-reload-configs: '&cPrzeladowanie konfiguracji napotkalo bląd, sprwadź konsole.'
+#PL: Gdy gracz próbuje wejsc na teren zamknietej dziakki.
+#EN: When a player attempts to enter a closed plot.
+plot-terrain-is-closed-on-entry: '&cTeren tej dzialki jest zamkniety!'
+#PL: Gdy gracz próuje teleportowac sie na zamknietą dziakke.
+#EN: When a player tries to teleport to a closed plot.
+plot-terrain-is-closed-on-teleport: '&cNa terenie na ktory chcesz sie teleportowac
+  znajduje sie dzialka ktora ma zamkniety teren.'
+#PL: Gdy gracz bedzie znajdowak sie na dziakce która zostaka zamknieta.
+#EN: When a player is in a plot that has been closed.
+plot-you-were-on-has-been-closed: '&cDzialka na ktorej sie znajdowales zostala zamknieta.
+  Zostales przeleteportowany na spawn!'
+#PL: Gdy gracz zamknie teren dziakki.
+#EN: When a player closes the plot area.
+successfully-plot-closed: '&aTeren dzialki pomyslnie zostal zamkniety.'
+#PL: Gdy gracz otworzy teren dziakki.
+#EN: When a player opens a plot area.
+successfully-plot-opened: '&aTeren dzialki zostal pomyslnie otwarty.'
+#PL: Gdy gracz próbuje zamknąc zamknietą juz dziakke.
+#EN: When a player tries to close an already closed plot.
+plot-already-closed: '&cDzialka jest juz zamknieta.'
+#PL: Gdy gracz próbuje otwrzyc otwartą juz dziakke.
+#EN: When a player tries to open an already open plot.
+plot-already-opened: '&cDzialka jest juz otwarta.'
+#PL: Gdy gracz sprwadzi swoje limity.
+#EN: Once a player has tested their limits.
+limits-message:
+  - ' &8●●●●●●●●●●●● &6✿ &8●●●●●●●●●●●●'
+  - ' &8>> &7Maksymalna ilosc dzalek: &e{plots}'
+  - ' &8>> &7Maksymalna wielkosc dzialki: &e{size}'
+  - ' &8>> &7Maksymalna ilosc osob w dzialce: &e{slots}'
+  - ' &8●●●●●●●●●●●● &6✿ &8●●●●●●●●●●●●'
+#PL: Gdy zmienna nie bedzie posidaka danych.
+#EN: When placeholder dont have data.
+data-not-available-placeholder: '&cData not available!'
+#PL: Gdy zostanie wkączone latanie na dziakce dzieki uprawnieniu.
+#EN: When flying on the lot due to entitlement is enabled.
+flying-successfully-enabled: '&aWlaczono latanie na terenie dzialki.'
+#PL: Gdy gracza bez wymaganych uprawnien lata poza dziakką.
+#EN: When a player without the required credentials flies off the lot.
+flying-is-disabled-outside-the-plot: '&cLatanie zostalo wylaczone poza terem dzialki'
+#PL: Konfiguracja wiadomosci dotyczących komend.
+#EN: Configuring command messages.
+acf-core:
+  unknown_command: '&cTaka komenda nie istnieje.'
+  help_format: '{command} {parameters} {separator} {description}'
+  permission_denied: '&cPrzykro mi, jednak nie posiadasz uprawnien do tej komendy.'
+  must_be_min_length: '&cArgument musi posiadac przynajmniej {min} znaki/znakow.'
+  invalid_syntax: '&cPoprawne uzycie: &e{command} {syntax}.'
+  error_prefix: '&cBlad: {message}.'
+  not_allowed_on_console: '&cKonsola nie moze wykonac tej komendy.'
+  error_generic_logged: '&cWystapil niespodziewany blad, ktory zostal zarejestrowany.'
+  must_be_a_number: '&cArgument musi byc liczba!'
+  error_performing_command: '&cWystapil niespodziewany blad, ktory zostal zarejestrowany.'
+  must_be_max_length: '&cArgument musi posiadac maksymalnie {max} znaki/znakow.'
+  info_message: '&7{message}'
+  could_not_find_player: '&cNie znaleziono gracza o nicku: &c{search}'
+  please_specify_one_of: '&cWybierz jeden z podanych argumentow: &e{valid}'
+#PL: Gdy odlegkosc od innych dziakek jest mniejsza niz minimalna podana w konfiguracji.
+#EN: When the distance to other parcels is less than the minimum specified in the configuration.
+small-distance-to-spawn: '&cThe distance from the spawn is too short.'
+#PL: Gdy gracz uzyje zablokowanej nazwy dziakki.
+#EN: When a player uses blocked plot name.
+blocked-plot-name: Blocked name!
