@@ -26,6 +26,8 @@ administrator-commands-list:
 - ' &8[&6#&8] &7/minelogin forcelogin <nickname> - &eForce user login.'
 - ' &8[&6#&8] &7/minelogin geolocation <add/remove/check> <IPv4> - &eManage geolocation
   whitelist.'
+- ' &8[&6#&8] &7/minelogin disableVerificaiton <nickname> - &eDisable 2fa verification
+  for user.'
 - ' &8[&6#&8] &7/minelogin register <nickname> <password> - &eRegister user.'
 - ' &8[&6#&8] &7/minelogin reload - &eReload plugin configs.'
 - ' &8[&6#&8] &7/minelogin unregister <nickname> - &eUnregister user (Delete from
@@ -91,16 +93,11 @@ user-is-already-logged: ' &8[&6#&8] &cUser is already logged!'
 #PL: Gdy użytkownik jest offline.
 #EN: 
 user-is-offline: ' &8[&6#&8] &cUser is already offline!'
-#PL: Gdy użytkownik pomyślnie zaloguje się z typku konta cracked.
-#EN: 
-successfully-login-by-non-premium: ' &8[&6#&8] &aSuccessfully logged in! (non-premium
-  account)'
 #PL: Gdy logowanie użytkownika zostanie wymuszone.
 #EN: 
 successfully-force-login: ' &8[&6#&8] &aForced login - {username}'
 #PL: Gdy serwer na który chce przejść użytkownik podczas logowanie jest nie dostępny.
 #EN: 
-server-not-response: ' &8[&6#&8] &cServers {server} is not responding!'
 server-lost-connection: ' &8[&6#&8] &cServer &e{server} lost connection by: &6{reason}&8'
 #PL: Gdy format adresu IPv4 jest nie poprawny.
 #EN: 
@@ -132,71 +129,197 @@ successfully-unregister: ' &8[&6#&8] &aSuccessfully unregistered!'
 #EN: 
 register-command: ' &8[&6#&8] &7Set your password: &e/register <password> <password>
   {captcha}'
+#PL: Komenda Gdy użytkownik chce odrejestrować swoje konto.
+#EN: 
 unregister-command: ' &8[&6#&8] &7Unregister your account &e/unregister <password>'
+#PL: Komenda Gdy użytkownik musi się zalogować.
+#EN: 
 login-command: ' &8[&6#&8] &7Login with &e/login <password> {2fa}'
+#PL: Komenda Gdy użytkownik chce dodać adres email do swojego konta.
+#EN: 
 add-email-command: ' &8[&6#&8] &7Add your email adress. &cUse &e/email <email-address>!'
+#PL: Komenda Gdy użytkownik chce zmienić adres email.
+#EN: 
 change-email-command: ' &8[&6#&8] &cUse &e/email <old-email-address> <new-email-address>
   &cto change him!'
+#PL: Komenda Gdy użytkownik chce zmienić swój typ konta na cracked.
+#EN: 
 cracked-command: ' &8[&6#&8] &7Change account type to cracked: &e/cracked <password>
   <repeat-password>'
+#PL: Komenda Gdy użytkownik chce odzyskać konto dzieki kodowi z emaila.
+#EN: 
 recovery-command: ' &8[&6#&8] &cUse &e/recovery <code> <new-password> <new-password>'
+#PL: Komenda Gdy użytkownik chce zmienić hasło do swojego konta.
+#EN: 
 change-password-command: ' &8[&6#&8] &7Change your password: &e/changepass <old-password>
   <new-password>'
+#PL: Gdy użytkownik nie jest jeszcze zalogowany.
+#EN: 
 not-logged: ' &8[&6#&8] &cYou are not logged in!'
+#PL: Gdy użytkownik jest już zalogowany.
+#EN: 
 already-logged: ' &8[&6#&8] &cYou are already logged in!'
+#PL: Gdy użytkownik jest już zarejestrowany.
+#EN: 
 already-registered: ' &8[&6#&8] &cYou are already registered!'
+#PL: Gdy podane hasło jest niedozwolone.
+#EN: 
 disallowed-password: ' &8[&6#&8] &cThis password is disallowed!'
+#PL: Gdy stare hasło jest niepoprawne..
+#EN: 
 incurred-old-password: ' &8[&6#&8] &cIncorrect old password!'
+#PL: Gdy hasła się nie pokrywają.
+#EN: 
 not-match-passwords: ' &8[&6#&8] &cPasswords do not match, try again.'
+#PL: Gdy użytkowik zmieni hasło do konta.
+#EN: 
 successfully-change-password: ' &8[&6#&8] &aYour password has been changed successfully!'
+#PL: Gdy wymagane jest powtórzenie komendy aby podtwierdzić akcje.
+#EN: 
 command-confirm: ' &8[&6#&8] &cPlease run this command again to confirm!'
+#PL: Zmienna typu konta cracked (non-premium).
+#EN: 
 type-variable-cracked: Cracked
+#PL: Zmienna typi konta premium (paid).
+#EN: 
 type-variable-premium: Paid
+#PL: Gdy format podanego emaila jest niepoprawny.
+#EN: 
 incorrect-email-validation: ' &8[&6#&8] &cIncorrect email!'
+#PL: Gdy użytkownik pomyslnie doda email do swojego konta.
+#EN: 
 successfully-add-email: ' &8[&6#&8] &aSuccess connected your email address to account!'
+#PL: Gdy adresy email się nie pokrywają.
+#EN: 
 not-match-emails: ' &8[&6#&8] &cEmails do not match, try again.'
+#PL: Gdy użytkownik pomyślnie zmieni adres email.
+#EN: 
 successfully-change-email: ' &8[&6#&8] &aSuccessfully changed your email address!'
+#PL: Gdy gracz dzięki komendzie /hub wróci na serwer lobby.
+#EN: 
 successfully-back-to-lobby: ' &8[&6#&8] &aSuccessfully back to lobby.'
+#PL: Gdy nick użytkownika nie jest nickiem premium.
+#EN: 
 nickname-is-not-premium: ' &8[&6#&8] &cYour nickname does not belong to premium account'
+#PL: Gdy użtkownik zmieni typ konta na premium.
+#EN: 
 need-reconnect-to-confirm-changes: ' &ePlease reconnect to server for confirm change
   account type. {new} &4&lWARNING! {new} &cIf the server administrator has not enabled
   the option to {new} &csave items after changing the account type, do not reconnect
   for 1 min.'
+#PL: Gdy na serwerze jest wyłączony system mailingowy.
+#EN: 
 mailing-is-disabled: ' &8[&6#&8] &cThis server has disabled mailing system.'
+#PL: Gdy użytkownik nie posiada połączonego adresu email.
+#EN: 
 no-email-connected: ' &8[&6#&8] &cThere is no e-mail address connected to this account.'
+#PL: Gdy użytkownik odzyskuje konto.
+#EN: 
 recovery-account-email-send: ' &8[&6#&8] &aAccount recovery email has been sent! Delivery
   process may take up to 8 minutes.'
+#PL: Gdy kod z email jest niepoprawny.
+#EN: 
 invalid-recovery-code: ' &8[&6#&8] &cInvalid security code. Check your email!'
+#PL: Gdy konto zostanie pomyślnie odzyskane.
+#EN: 
 recovery-account-success: ' &8[&6#&8] &aYour account has been successfully recovered!'
+#PL: Gdy użytkownik użyje niepoprawnego hasła.
+#EN: 
 incorrect-password: ' &8[&6#&8] &cIncorrect password! {use}/{max} attempts left'
+#PL: Gdy użytkownik poda niepoprawne stare hasło.
+#EN: 
 incorrect-old-password: ' &8[&6#&8] &cIncorrect old password!'
+#PL: Gdy użytkownik na do wykorzystania ostatnią próbe wpisania hasła.
+#EN: 
 incorrect-password-recovery-info: ' &8[&6#&8] &cLast attempt! If you forgot your password,
   use &e/recovery. &cNOTE: Make sure you have an email adress assigned to your account.'
+#PL: Gdy użytkownik wykorzystał wszystkie próby wpisania hasła.
+#EN: 
 incorrect-password-kick: ' &f&lmineLogin {new} &cToo many failed attempts! Use &e/recovery.
   {new} &cNOTE: Make sure you have an email adress assigned to your account'
+#PL: Ostrzeżenie gdy użytkownik jest posiada podłączonego adresu email do konta.
+#EN: 
 email-warning: ' &8[&6#&8] &4&lIMPORTANT! &cAdd an email address to your account &e/email
   <email>'
+#PL: Gdy użytkownik poda nieprawidłowy kod captcha.
+#EN: 
 incorrect-captcha: ' &8[&6#&8] &cThe code you entered is incorrect!'
+#PL: Gdy użytkownik przekroczył limit kont.
+#EN: 
 maximum-player-accounts: ' &8[&6#&8] &cYou have reached the maximum number of accounts!'
+#PL: Gdy użytkownik pomyślnie sie zarejestruje.
+#EN: 
 successfully-register: ' &8[&6#&8] &aYou have been successfully registered!'
+#PL: Gdy sesja logowania zostanie wyłączona.
+#EN: 
 successfully-disable-login-session: ' &8[&6#&8] &aSuccessfully disabled login session!'
+#PL: Gdy użytkonik włączy 
+#EN: 
 successfully-enable-login-session: ' &8[&6#&8] &aLogin session successfully enabled
   for {time} or until the ip address is changed.'
+#PL: Gdy kraj użytkonika jest zablokowany.
+#EN: 
 country-is-blocked: ' &8[&6#&8] &cYour country is blocked!'
+#PL: Gdy w danej chwili do serwera łączy się zbyt wiele osób.
+#EN: 
 too-many-connections: ' &8[&6#&8] &cToo many connections! Please try again in &e{time}'
+#PL: Gdy serwer jest pełny.
+#EN: 
 server-is-full: ' &8[&6#&8] &cServer is full, try again later.'
+#PL: Gdy użytkownik o takim nicku jest już online.
+#EN: 
 nickname-is-already-online: ' &8[&6#&8] &cThis nick is already online!'
+#PL: Gdy nick użytkownika ma niepoprawną długość.
+#EN: 
 bad-nickname-length: ' &8[&6#&8] &cIncorrect nick length.'
+#PL: Gdy nick użytkownika posiada niedozwolone znaki.
+#EN: 
 not-allowed-chars: ' &8[&6#&8] &cYour nick contains not allowed chars!'
+#PL: Gdy APi autoryzacyjne nie odposiada.
+#EN: 
 apis-are-not-responding: ' &8[&6#&8] &cAPIs are not responding!'
+#PL: Gdy użytkownik próbuje wejść z podobnego nicku.
+#EN: 
 use-correct-username: ' &8[&6#&8] &cUse your correct username: &e{username}'
+#PL: Gdy użytkownik pomyślnie zaloguje się z typku konta cracked.
+#EN: 
+successfully-login-by-non-premium: ' &8[&6#&8] &aSuccessfully logged in! (non-premium
+  account)'
+#PL: Gdy użytkownik zaloguje się jako premium.
+#EN: 
 successfully-login-paid-account: ' &8[&6#&8] &aSuccessfully logged in! (premium account)'
+#PL: Gdy użytkownik zaloguje się dzięki sesji.
+#EN: 
 successfully-login-by-session: ' &8[&6#&8] &aSuccessfully logged in by session!'
+#PL: Wiadomość powitalna po pomyślnej autoryzacji.
+#EN: 
+#Placeholders: {username}, {registerTime}, {email}
+welcome-message-after-successfully-authorize:
+- ''
+- '&7Hi &e{username}&7!'
+- ''
+- '&7Visit: &ehttps://minecodes.pl'
+- ''
+- '&7Your register time &e{registerTime}'
+- '&7Your email address is &e{email}'
+- ''
+#PL: Gdy czas użytkownika na zalogowanie się minie.
+#EN: 
 login-timeout: ' &8[&6#&8] &cTime for logging in has expired!'
+#PL: Gdy czas na podtwierdzenie minał.
+#EN: 
 account-type-change-timeout: ' &8[&6#&8] &cRequest timed out!'
+#PL: Gdy pliki konfiguracyjne zostaną pomyślnie przeładowane.
+#EN: 
 successfully-reloaded: ' &8[&6#&8] &aSuccessfully reloaded plugin configs.'
+#PL: Gdy użytkownik użyje niepoprawnej formuły komendy.
+#EN: 
 command-usage: ' &8[&6#&8] &cCurrently command usage: &e{usage}'
+#PL: Gdy akcja zostanie przerawna przez API.
+#EN: 
 action-canceled-by-api: ' &8[&6#&8] &cThis action is cancelled by plugin API.'
+#PL: List informacji o użytkowniku.
+#EN: 
 user-information:
 - ' '
 - '                  #02eacf User information'
@@ -224,11 +347,16 @@ verification-failure-code-arguments: ' &8[&6#&8] &cYou need to provide generated
   like this: /verification 123456'
 verification-successfully-disable: ' &8[&6#&8] &aYour two-step verification has been
   disabled.'
+verification-code-has-already-been-used: ' &8[&6#&8] &cThe code has already been used.'
 verification-is-not-enable: ' &8[&6#&8] &cYou don''t have enabled two-step verification.'
+user-verification-is-not-enable: ' &8[&6#&8] &cUser don''t have enabled two-step verification.'
 verification-panding-command: ' &8[&6#&8] &cType &e/verification <2fa-code> to confirm
   enable 2fa verification.'
 verification-disable-information: ' &8[&6#&8] &cYou can disable 2FA by type &e/verification
   disable <2fa-code> command'
+verification-recovery-codes: ' &8[&6#&8] &cThis is your recovery codes: &e{codes}'
+successfully-disable-verification-by-admin: ' &8[&6#&8] &cSuccessfully disable 2fa
+  verification for &e{username}'
 verification-confirm-information:
 - ''
 - '                  &c2FA Verification'
@@ -241,7 +369,6 @@ verification-confirm-information:
 already-connected-to-this-server: '&cYou already connected to this server.'
 verification-is-disabled-for-paid-accounts: '&c2Fa verification is disabled for paid
   users.'
-user-verification-is-not-enable: ' &8[&6#&8] &cUser don''t have enabled two-step verification.'
-verification-recovery-codes: ' &8[&6#&8] &cThis is your recovery codes: &e{codes}'
-successfully-disable-verification-by-admin: ' &8[&6#&8] &cSuccessfully disable 2fa
-  verification for &e{username}'
+#PL: Wiadomość powitalna po pomyślnej autoryzacji.
+#EN: 
+welcome-email-none-placeholder: Setup email address by /email command!
