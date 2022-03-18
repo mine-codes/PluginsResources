@@ -1,0 +1,33 @@
+#PL: Gdy plugin zostanie pomyślnie przeładowany.
+#EN: When the plugin is successfully reloaded.
+successfully-reload: '&aSuccessfully reloaded configurations!'
+#PL: Gdy gracz posiada zbyt dużo przedmiotów i zostaną one przeniesione do schowka.
+#EN: When a player has too many items and they will be moved to the locker.
+#Placeholders: {material}, {overageItems}
+limit-check: '&cYou had too much ({material}), the excess ({overageItems}) was moved
+  to the clipboard!'
+#PL: Gdy pomyślnie wypełni się limit przedmiotu w ekwipunku.
+#EN: When you have successfully filled the item limit in your inventory.
+#Placeholders: {material}, {items}
+successfully-fill-limit: '&aSuccessfully fleshed out the limit ({material}) in your
+  inventory, with additional {items} items!'
+#PL: Gdy gracz nie posiada danego przedmiotu w schwoku.
+#EN: When a player does not have the item in schwack.
+#Placeholders: {material}
+storage-is-empty: '&cYou do not have this item ({material}) in your stash!'
+#PL: Gdy Gracz chce wypełnić limit posiadająć już maksymalną ilość przedmiotów.
+#EN: When the player wants to fill the limit with the maximum amount of items.
+#Placeholders: {material}
+you-have-maximum-items: '&cYou already own the maximum amount of this item! ({material})'
+#PL: Gdy gracz chce wypłenić limit ale nie ma już tego przedmiotu w zapasie.
+#EN: When a player wants to pay the limit but does not have the item in stock.
+item-data-is-empty: '&cYou have no inventory for this item!'
+#PL: Gdy gracz będzie posiadał wypełnione wszystkie limity.
+#EN: When the player will have all the limits filled.
+failed-fill-all-limits: '&aThe limits are out!'
+#PL: Gdy pomyślnie zostaną wypłenione wszystkie limity.
+#EN: When all limits have been successfully paid.
+successfully-fill-all-limits: '&aSuccessfully fished fill all limits!'
+#PL: Gdy gracz będzie próbował zbyt często dobierać limit (cooldown 2sek.)
+#EN: When a player tries to hit the limit too often (2sec. cooldown).
+fill-cooldown: '&cYou must wait before downloading items again!'
