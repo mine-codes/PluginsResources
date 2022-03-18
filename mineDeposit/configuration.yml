@@ -1,0 +1,83 @@
+#PL: Klucz licencyjny.
+#EN: License key.
+license: CODE
+#PL: Sposób sprawdzania limitów w ekwipunku gracza.
+#PL: W przypadku gdy wszystkie przedmioty limitowane są jadalne, zalece się użycie opcji ON_CONSUME.
+#----------------
+#EN: A way to check the limits in a player's inventory.
+#EN: If all limited items are edible, it is recommended to use the ON_CONSUME option.
+#Options: ON_MOVE, ON_CONSUME
+check-type: ON_MOVE
+#PL: Konfiguracja połączenia do bazy danych.
+#EN: Configuring the connection to the database.
+database:
+  #Hasło dostępu
+  password: pass
+  #Adres bazy danych
+  hostname: localhost
+  connection-timeout: 3000
+  #Port bazy
+  port: 3306
+  #Użytkownik
+  username: mineLogin
+  #Czy ma być włączony SSL?
+  ssl-use: false
+  #Nazwa bazy
+  database: mineLogin
+  max-life-time: 1800000
+  max-pool-size: 20
+#PL: Konfiguracja gui schowka.
+#EN: Deposit gui configuration.
+gui-config:
+  #PL: Liczba wierszy.
+  #EN: Number of rows.
+  rows: 3
+  #PL: Nazwa gui.
+  #EN: Gui name.
+  title: '&3Schowek!'
+  #PL: Slot na którym ma się znajdować przedmiot do wypełnienia wszystkich limitów.
+  #EN: The slot on which the item is to be placed to fill all limits.
+  fill-all-limits-slot: 16
+  #PL: Przedmiot którym jest wypełnione GUI.
+  #EN: The object that the GUI is filled with.
+  gui-filler:
+    material: APPLE
+    item-meta:
+      display-name: ' '
+  #PL: Przedmiot którym gracz wepełni wszystkie limity w ekwipunku.
+  #EN: The item with which the player fills all inventory limits.
+  fill-all-limits:
+    material: BEACON
+    item-meta:
+      display-name: '&eWepelnij wszystkie limity!'
+      lore:
+      - ''
+      - '&eKliknij aby wypełnić wszystkie dostepne limity!'
+      - ''
+#PL: Konfiguracja limitów dla danych materiałów.
+#EN: Configure limits for given materials.
+limits:
+- customName: Ender Pearl
+  material: ENDER_PEARL
+  durability: 0
+  maximumItems: 3
+  guiItem:
+    slot: 13
+    title: '&7Ender Pearls'
+    lore:
+    - ' '
+    - ' &8>> &7Your stocks: &e{storage}'
+    - ' '
+    - ' &8>> &eClick for fill this limit in inventory!'
+- customName: Golden Apple
+  material: GOLDEN_APPLE
+  durability: 0
+  maximumItems: 10
+  guiItem:
+    slot: 11
+    title: '&eGolden Apples'
+    lore:
+    - ' '
+    - ' &8>> &7Your stocks: &e{storage}'
+    - ' '
+    - ' &8>> &eClick for fill this limit in inventory!'
